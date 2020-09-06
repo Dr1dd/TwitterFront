@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Tweets />
+    <Search />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header'
+import Tweets from './components/MainContent'
+import Search from './components/Search'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Tweets,
+    Search
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+:root{
+  --base-color: rgb(21, 32, 43);
+  --tweet-content-width-l: 600px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+body{
+  margin: 0px;
+  background-color: var(--base-color);
 }
 </style>
