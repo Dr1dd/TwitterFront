@@ -23,6 +23,7 @@ export default {
 <style lang="scss">
 :root{
   --base-color: rgb(21, 32, 43);
+  --twitter-default: rgba(29, 161, 242, 1.00);
   --tweet-content-width-l: 600px;
 }
 #app {
