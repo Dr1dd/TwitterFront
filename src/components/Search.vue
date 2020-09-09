@@ -57,12 +57,11 @@ $icon-hover-bg-color: rgba(29, 161, 242, 0.1);
 $default-border: 1px solid #2b3640;
 .search{
     display: flex;
-    justify-content: flex-start;
 
     flex-grow: 1;
     position: fixed;
     height: 100vh;
-    width: calc((100vw - var(--tweet-content-width-l) )/ 1.8);
+    width: calc((100vw - var(--tweet-content-width-l) )/ 1.87);
     right: 0;
     z-index: 2;
 }
